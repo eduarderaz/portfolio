@@ -75,22 +75,22 @@ section{position:relative;z-index:1}
 .portfolio-filters{display:flex;gap:.6rem;margin-bottom:3rem;flex-wrap:wrap}
 .filter-btn{background:var(--bg2);border:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:.82rem;font-weight:600;padding:.55rem 1.3rem;border-radius:50px;cursor:none;transition:all .2s;font-family:'Poppins',sans-serif;letter-spacing:.04em}
 .filter-btn:hover,.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
-.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
-.video-card{background:var(--bg2);border:1px solid rgba(255,255,255,.06);border-radius:10px;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
+.video-card{background:var(--bg2);border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
 .video-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 0 1px rgba(255,0,76,.2);border-color:rgba(255,0,76,.3)}
-.video-thumb{position:relative;width:100%;padding-bottom:56.25%;overflow:hidden;background:var(--bg3)}
+.video-thumb{position:relative;width:100%;padding-bottom:56.25%;background:var(--bg3)}
 .video-thumb iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;z-index:1}
 .video-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--muted);text-align:center;padding:1rem;flex-direction:column;gap:.5rem}
 .video-placeholder-icon{font-size:2rem;opacity:.4}
 .play-overlay{position:absolute;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;transition:opacity .3s;z-index:2}
-.play-btn{width:56px;height:56px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;animation:pulse 2.5s ease-in-out infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,0,76,.4)}50%{box-shadow:0 0 0 14px rgba(255,0,76,0)}}
-.play-btn svg{margin-left:4px}
+.play-btn{width:64px;height:64px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;animation:pulse 2.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,0,76,.4)}50%{box-shadow:0 0 0 16px rgba(255,0,76,0)}}
+.play-btn svg{margin-left:5px}
 .video-card:hover .play-overlay{opacity:0}
-.video-info{padding:1.2rem 1.4rem}
+.video-info{padding:1.4rem 1.6rem}
 .video-cat{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem}
-.video-title{font-size:.95rem;font-weight:600;margin-bottom:.3rem}
-.video-desc{font-size:.8rem;color:var(--muted);line-height:1.5}
+.video-title{font-size:1rem;font-weight:600;margin-bottom:.35rem}
+.video-desc{font-size:.83rem;color:var(--muted);line-height:1.5}
 #servicos{padding:7rem 5%;background:var(--bg2)}
 .servicos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
 .servico-card{background:var(--bg);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:2rem 1.8rem;transition:all .3s;position:relative;overflow:hidden}
@@ -142,7 +142,8 @@ footer p{font-size:.78rem;color:var(--muted)}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 .fd1{transition-delay:.1s}.fd2{transition-delay:.2s}.fd3{transition-delay:.3s}.fd4{transition-delay:.4s}
 @media(max-width:900px){.sobre-inner,.contato-inner{grid-template-columns:1fr;gap:2.5rem}.hero-stats{display:none}.nav-links,.nav-cta{display:none}.hamburger{display:flex}}
-@media(max-width:600px){.portfolio-grid,.servicos-grid,.sobre-cards-grid,.skills-wrap{grid-template-columns:1fr}.hero-btns{flex-direction:column}}
+@media(max-width:768px){.portfolio-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.servicos-grid,.sobre-cards-grid,.skills-wrap{grid-template-columns:1fr}.hero-btns{flex-direction:column}}
 </style>
 </head>
 <body>
@@ -209,10 +210,10 @@ footer p{font-size:.78rem;color:var(--muted)}
     </div>
     <div class="fade-in fd2">
       <div class="sobre-cards-grid">
-        <div class="sobre-card"><div class="sobre-card-icon">🎬</div><h3>Edicao Criativa</h3><p>Cortes que prendem, ritmo que engaja e storytelling que converte.</p></div>
-        <div class="sobre-card"><div class="sobre-card-icon">✨</div><h3>Motion Graphics</h3><p>Animacoes e efeitos visuais que elevam a producao.</p></div>
-        <div class="sobre-card"><div class="sobre-card-icon">🎨</div><h3>Color Grading</h3><p>Identidade visual consistente e profissional.</p></div>
-        <div class="sobre-card"><div class="sobre-card-icon">🚀</div><h3>Entrega Rapida</h3><p>Prazos cumpridos sem abrir mao da qualidade.</p></div>
+        <div class="sobre-card"><div class="sobre-card-icon">&#127916;</div><h3>Edicao Criativa</h3><p>Cortes que prendem, ritmo que engaja e storytelling que converte.</p></div>
+        <div class="sobre-card"><div class="sobre-card-icon">&#10024;</div><h3>Motion Graphics</h3><p>Animacoes e efeitos visuais que elevam a producao.</p></div>
+        <div class="sobre-card"><div class="sobre-card-icon">&#127912;</div><h3>Color Grading</h3><p>Identidade visual consistente e profissional.</p></div>
+        <div class="sobre-card"><div class="sobre-card-icon">&#128640;</div><h3>Entrega Rapida</h3><p>Prazos cumpridos sem abrir mao da qualidade.</p></div>
       </div>
     </div>
   </div>
@@ -242,20 +243,7 @@ footer p{font-size:.78rem;color:var(--muted)}
       <div class="video-thumb" id="vt4"></div>
       <div class="video-info"><div class="video-cat">Reels / TikTok</div><div class="video-title">Short com Motion Graphics</div><div class="video-desc">Animacoes integradas ao video para conteudo premium.</div></div>
     </div>
-    <div class="video-card fade-in fd2" data-cat="youtube">
-      <div class="video-thumb">
-        <div class="video-placeholder"><div class="video-placeholder-icon">🎙️</div><span>Corte de Podcast</span></div>
-        <div class="play-overlay"><div class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
-      </div>
-      <div class="video-info"><div class="video-cat">YouTube</div><div class="video-title">Corte de Podcast Profissional</div><div class="video-desc">Edicao multicamera com legendas animadas e tratamento de audio.</div></div>
-    </div>
-    <div class="video-card fade-in fd3" data-cat="youtube">
-      <div class="video-thumb">
-        <div class="video-placeholder"><div class="video-placeholder-icon">🎥</div><span>Review Cinematografico</span></div>
-        <div class="play-overlay"><div class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
-      </div>
-      <div class="video-info"><div class="video-cat">YouTube</div><div class="video-title">Review Estetica Cinematografica</div><div class="video-desc">Color grading cinematografico e trilha sonora alinhada ao conteudo.</div></div>
-    </div>
+
   </div>
   <div style="text-align:center;margin-top:3rem" class="fade-in">
     <p style="font-size:.88rem;color:var(--muted);margin-bottom:1.2rem">Quer ver mais ou discutir seu projeto?</p>
@@ -266,12 +254,12 @@ footer p{font-size:.78rem;color:var(--muted)}
   <div class="section-label fade-in">O que eu faco</div>
   <h2 class="section-title fade-in fd1">Servicos <span>Disponiveis</span></h2>
   <div class="servicos-grid">
-    <div class="servico-card fade-in"><div class="servico-icon">📱</div><h3>Edicao TikTok e Reels</h3><p>Cortes rapidos e dinamicos com hooks poderosos para maximizar retencao e viralizacao.</p></div>
-    <div class="servico-card fade-in fd1"><div class="servico-icon">🎙️</div><h3>Cortes de Podcast</h3><p>Edicao multicamera, corte de silencios, legendas animadas e highlights para todas as plataformas.</p></div>
-    <div class="servico-card fade-in fd2"><div class="servico-icon">▶️</div><h3>Edicao para YouTube</h3><p>Videos longos com storytelling, thumbnails, intros animados e color grading profissional.</p></div>
-    <div class="servico-card fade-in fd3"><div class="servico-icon">✨</div><h3>Motion Graphics</h3><p>Animacoes, titulos, lower thirds e efeitos visuais que elevam o padrao da producao.</p></div>
-    <div class="servico-card fade-in fd1"><div class="servico-icon">💬</div><h3>Legendas Animadas</h3><p>Legendas estilizadas e animadas no padrao viral, com highlight automatico da palavra falada.</p></div>
-    <div class="servico-card fade-in fd2"><div class="servico-icon">🌐</div><h3>Criacao de Websites</h3><p>Sites modernos, responsivos e otimizados para conversao.</p></div>
+    <div class="servico-card fade-in"><div class="servico-icon">&#128241;</div><h3>Edicao TikTok e Reels</h3><p>Cortes rapidos e dinamicos com hooks poderosos para maximizar retencao e viralizacao.</p></div>
+    <div class="servico-card fade-in fd1"><div class="servico-icon">&#127897;</div><h3>Cortes de Podcast</h3><p>Edicao multicamera, corte de silencios, legendas animadas e highlights para todas as plataformas.</p></div>
+    <div class="servico-card fade-in fd2"><div class="servico-icon">&#9654;</div><h3>Edicao para YouTube</h3><p>Videos longos com storytelling, thumbnails, intros animados e color grading profissional.</p></div>
+    <div class="servico-card fade-in fd3"><div class="servico-icon">&#10024;</div><h3>Motion Graphics</h3><p>Animacoes, titulos, lower thirds e efeitos visuais que elevam o padrao da producao.</p></div>
+    <div class="servico-card fade-in fd1"><div class="servico-icon">&#128172;</div><h3>Legendas Animadas</h3><p>Legendas estilizadas e animadas no padrao viral, com highlight automatico da palavra falada.</p></div>
+    <div class="servico-card fade-in fd2"><div class="servico-icon">&#127760;</div><h3>Criacao de Websites</h3><p>Sites modernos, responsivos e otimizados para conversao.</p></div>
   </div>
 </section>
 <section id="habilidades">
@@ -293,11 +281,11 @@ footer p{font-size:.78rem;color:var(--muted)}
       </div>
     </div>
     <div class="skills-badges fade-in fd3">
-      <span class="badge">⚡ Edicao Viral</span><span class="badge">✨ Motion Graphics</span>
-      <span class="badge">🎨 Color Grading</span><span class="badge">🎵 Sound Design</span>
-      <span class="badge">✂️ Cortes Dinamicos</span><span class="badge">💬 Legendas Animadas</span>
-      <span class="badge">🎬 Storytelling</span><span class="badge">📱 Reels / TikTok</span>
-      <span class="badge">▶️ YouTube</span><span class="badge">🌐 Web Design</span>
+      <span class="badge">&#9889; Edicao Viral</span><span class="badge">&#10024; Motion Graphics</span>
+      <span class="badge">&#127912; Color Grading</span><span class="badge">&#127925; Sound Design</span>
+      <span class="badge">&#9986; Cortes Dinamicos</span><span class="badge">&#128172; Legendas Animadas</span>
+      <span class="badge">&#127916; Storytelling</span><span class="badge">&#128241; Reels / TikTok</span>
+      <span class="badge">&#9654; YouTube</span><span class="badge">&#127760; Web Design</span>
     </div>
   </div>
 </section>
@@ -309,15 +297,15 @@ footer p{font-size:.78rem;color:var(--muted)}
       <p class="contato-desc">Tem um projeto em mente? Quer transformar seu conteudo em algo que realmente engaja? Me manda uma mensagem.</p>
       <div class="contact-links">
         <a href="mailto:eduarderaz30@gmail.com" class="contact-link">
-          <div class="contact-link-icon">✉️</div>
+          <div class="contact-link-icon">&#9993;</div>
           <div class="contact-link-info"><strong>Email</strong><span>eduarderaz30@gmail.com</span></div>
         </a>
         <a href="https://instagram.com/eduarderaz" target="_blank" class="contact-link">
-          <div class="contact-link-icon">📸</div>
+          <div class="contact-link-icon">&#128247;</div>
           <div class="contact-link-info"><strong>Instagram</strong><span>@eduarderaz</span></div>
         </a>
         <a href="https://wa.me/5562981312928" target="_blank" class="contact-link">
-          <div class="contact-link-icon">💬</div>
+          <div class="contact-link-icon">&#128172;</div>
           <div class="contact-link-info"><strong>WhatsApp</strong><span>(62) 98131-2928</span></div>
         </a>
       </div>
@@ -370,7 +358,9 @@ footer p{font-size:.78rem;color:var(--muted)}
     var f=document.createElement('iframe');
     f.src='https://player.vimeo.com/video/'+item.v+'?badge=0&autopause=0&title=0&byline=0&portrait=0&sidedock=0&color=ff004c&dnt=1';
     f.setAttribute('allow','autoplay; fullscreen; picture-in-picture');
-    f.allowFullscreen=true;
+    f.setAttribute('allowfullscreen','');
+    f.setAttribute('webkitallowfullscreen','');
+    f.setAttribute('mozallowfullscreen','');
     f.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;border:none;z-index:1';
     wrap.innerHTML='';
     wrap.appendChild(f);
